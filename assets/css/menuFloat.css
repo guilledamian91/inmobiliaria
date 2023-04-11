@@ -1,0 +1,37 @@
+.menuFlot{
+	
+	background-color: var(--color1);
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	z-index: 3;
+	
+
+}
+.menuFlot>div>div>div>.logo{
+	position: relative;
+	height: 50px;
+	
+}
+
+.menuPaginas{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+
+}
+.menuPaginas a{
+	margin-right: 50px;
+	color: white;
+	transition: all .3s ease;
+	text-decoration: none;
+}
+.menuPaginas a:hover{
+	border-bottom: 5px solid var(--color3);
+}
+
+.pagActual{
+	border-bottom: 5px solid var(--color3);
+}
