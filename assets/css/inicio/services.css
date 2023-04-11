@@ -1,11 +1,11 @@
 .service{
-	min-height: 500px;
+	min-height: 550px;
 	
 }
 .contentServicio{
 	display: flex;
 	flex-direction: row-reverse;
-	
+	height: 400px;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -25,7 +25,7 @@
 	margin-right: -100px;
 	z-index: 2;
 	box-shadow: 2px 2px 10px black;
-	background-color: var(--color1-l2);	
+	background-color: white;	
 	padding: 10px;
 }
 .contentServicio>.texto>h1,p{
@@ -60,4 +60,18 @@
 }
 .cs2>.foto{
 	background-image: url(../../../sources/service2.jpg);
+}
+.fondoMedio{
+	height: 100%;
+	width: 50%;
+	background-color: var(--color1-l2);
+	z-index: 0;
+	position: absolute;
+	
+}
+.cs1>.fondoMedio{
+	left: 0;
+}
+.cs2>.fondoMedio{
+	right: 0;
 }
