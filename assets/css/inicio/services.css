@@ -67,6 +67,7 @@
 	background-color: var(--color1-l2);
 	z-index: 0;
 	position: absolute;
+	border-radius: 5px;
 	
 }
 .cs1>.fondoMedio{
@@ -74,4 +75,24 @@
 }
 .cs2>.fondoMedio{
 	right: 0;
+}
+
+@media (max-width: 820px){
+	.isotipo>.c1{
+		width: 97%;
+	}
+	.isotipo>.c1>img{
+		width: 20%;
+	}
+	.botonesHeader>.c2{
+		width: 97%;
+	}
+}
+@media (max-width: 480px){
+	.contentServicio{
+		padding: 0px;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
 }
