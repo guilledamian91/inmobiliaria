@@ -22,3 +22,19 @@
 #fotos{
 	background-color: var(--color2);
 }
+
+@media (max-width: 480px){
+	#fotosContent{
+		overflow: hidden;
+		height: 280px;
+	}
+	.muestra{
+		width: 100%;
+		height: auto;
+		aspect-ratio: 2/1;
+	}
+}
+
+@media (max-width: 360px){
+	
+}
