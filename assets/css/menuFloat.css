@@ -38,3 +38,13 @@
 .pagActual{
 	border-bottom: 5px solid var(--color3);
 }
+
+@media (max-width: 480px){
+	.menuPaginas>.opMenu{
+		display: none;
+	}
+	.menuPaginas{
+		position: relative;
+		margin-top: -40px;
+	}
+}
