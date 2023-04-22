@@ -1,17 +1,20 @@
 .menuFlot{
 	
-	background-color: var(--color3);
+	background-color: var(--color2);
 	position: fixed;
 	width: 100%;
-	height: auto;
+	height: 100px;
 	top: 0;
 	z-index: 3;
+	transition: all .6s ease;
 	
 
 }
 .menuFlot>div>div>div>.logo{
 	position: relative;
 	height: 50px;
+	transition: all 1s ease;
+	filter: drop-shadow(2px 2px 5px var(--color4));
 	
 }
 
