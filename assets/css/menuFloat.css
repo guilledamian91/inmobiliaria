@@ -15,18 +15,16 @@
 	height: auto;
 	top: 0;
 	z-index: 3;
->>>>>>> Guille
+
 	
 
 }
 .menuFlot>div>div>div>.logo{
 	position: relative;
 	height: 50px;
-<<<<<<< HEAD
 	transition: all 1s ease;
 	filter: drop-shadow(2px 2px 5px var(--color4));
-=======
->>>>>>> Guille
+
 	
 }
 
