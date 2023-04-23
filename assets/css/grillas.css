@@ -55,15 +55,7 @@ body{
 	border: var(--border);
 	background-color: var(--fondoF)
 =======
-.row{
-	display: flex;
-	width: 99.2%;
-	flex-direction: row;
-	justify-content: space-between;
-	border: var(--border);
->>>>>>> Guille
 
-}
 .c1{
 	position: relative;
 	float: left;
@@ -186,7 +178,7 @@ section{
 	
 	border: var(--border);
 }
->>>>>>> Guille
+
 
 /* MEDIA QUERY */
 @media (max-width: 1400px) and (min-width: 1121px){
@@ -201,8 +193,8 @@ section{
 <<<<<<< HEAD
 	.row1{
 =======
-	.row{
->>>>>>> Guille
+	
+
    		display: block;
    	}
 	.c1,.c2{
@@ -230,8 +222,7 @@ section{
 <<<<<<< HEAD
    	.row1{
 =======
-   	.row{
->>>>>>> Guille
+ 
    		display: block;
    	}
     .c1,.c2,.c3,.c4{
@@ -268,14 +259,7 @@ section{
     	margin-top: 25px;
     	padding-top:10px;
     	padding-bottom: 10px;
-=======
-   	.row{
-   		display: block;
-   	}
-    .c1,.c2,.c3,.c4{
-    	position: relative;
-    	min-width: 93.5%;
->>>>>>> Guille
+
     }
 
 }
@@ -285,10 +269,8 @@ section{
 		display: none;
 	}
 <<<<<<< HEAD
-   	.row1{
-=======
-   	.row{
->>>>>>> Guille
+   	.row1{=======
+   	
    		display: block;
    	}
     .c1,.c2,.c3,.c4{
@@ -304,8 +286,7 @@ section{
 <<<<<<< HEAD
    	.row1{
 =======
-   	.row{
->>>>>>> Guille
+   	
    		display: block;
    	}
     .c1,.c2,.c3,.c4{
