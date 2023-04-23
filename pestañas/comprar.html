@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inmobiliaria</title>
+  <link rel="stylesheet" href="/assets/css/comprar/styles.css">
+  <link rel="stylesheet" href="/assets/css/inicio/header.css">
+  <link rel="stylesheet" href="/assets/css/menuFloat.css">
+  <link rel="stylesheet" href="/assets/css/grillas.css">   
+  <link rel="stylesheet" href="/assets/css/inicio/services.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $.getJSON("https://sheetdb.io/api/v1/mtonetyh771as", function(data) {
+        $.each(data, function(index, item) {
+          var direccion = item.direccion;
+          var precio = item.precio;
+          var imagen = item.imagen;
+          var id = item.id;
+          var habitaciones = item.habitaciones;
+          var baños = item.baños;
+          var metros_cuadrados = item.metros_cuadrados;
+          var descripcion = item.descripcion;
+          var card = "<div class='card'><img src='" + imagen + "'><h3>" + direccion + "</h3><p>"  + precio + " USD</p><h3>" + "<p><h3> Habitaciones: " + habitaciones + "</h3><p>"+ "</p><h3> Baños: " + baños + "</h3><p>"+ "<p><h3> Metros cuadrados: "+ metros_cuadrados +"</h3></p>"+ "</p><h3> Descripción: "+ descripcion+ "</h3></div>";
+          $("#results").append(card);
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <nav class="menuFlot">
+    <div class="conteinerRow">
+      <div class="row">
+        <div class="c1">
+          <img src="/sources/logo.png" alt="" class="logo">
+        </div>
+        <div class="c3 menuPaginas">
+          <a href="/index.htm" class="pagActual">Inicio</a>
+          <a href="comprar.html" class="comprar">Comprar</a>
+          <a href="">Alquilar</a>
+          <a href="">Franquicia</a>
+          <a href="">Blog</a>
+          <a href="">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="results"></div>
+</body>
+</html>

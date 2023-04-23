@@ -1,4 +1,5 @@
 :root{
+<<<<<<< HEAD
 	/*--border: 1px solid red;
 
 	/*--fondoF: #9DDB89FF;
@@ -16,6 +17,22 @@
 }
 *{
 	font-family: var(--fuentePrimary);
+=======
+	/*--border: 1px solid red;*/
+	--color1: #8ecae6;
+	--color1-l2: #EDF5FCFF;
+	--color2:#219ebc;
+	--color3: #023047;
+	--color4: #ffb703;
+	--color5: #fb8500;
+	--iconSize1: 50px;
+	--iconSize2: 100px;
+	--altoSection: 450px;
+
+}
+*{
+	font-family: sans-serif;
+>>>>>>> Guille
 }
 body{
 	margin:0;
@@ -28,6 +45,7 @@ body{
 	margin-left: 7%;
 	border: var(--border);
 }
+<<<<<<< HEAD
 .row1{
 	display: flex;
 	width: 99.2%;
@@ -36,6 +54,14 @@ body{
 	justify-content: space-between;
 	border: var(--border);
 	background-color: var(--fondoF)
+=======
+.row{
+	display: flex;
+	width: 99.2%;
+	flex-direction: row;
+	justify-content: space-between;
+	border: var(--border);
+>>>>>>> Guille
 
 }
 .c1{
@@ -47,7 +73,10 @@ body{
 	border: var(--border);
 	margin-top: 5px;
 	margin-bottom: 5px;
+<<<<<<< HEAD
 	background-color: var(--fondoC);
+=======
+>>>>>>> Guille
 }
 .c2{
 	position: relative;
@@ -58,7 +87,10 @@ body{
 	border: var(--border);
 	margin-top: 5px;
 	margin-bottom: 5px;
+<<<<<<< HEAD
 	background-color: var(--fondoC);
+=======
+>>>>>>> Guille
 }
 .c3{
 	
@@ -70,7 +102,10 @@ body{
 	border: var(--border);
 	margin-top: 5px;
 	margin-bottom: 5px;
+<<<<<<< HEAD
 	background-color: var(--fondoC);
+=======
+>>>>>>> Guille
 }
 .c4{
 	position: relative;
@@ -81,6 +116,7 @@ body{
 	border: var(--border);
 	margin-top: 5px;
 	margin-bottom: 5px;
+<<<<<<< HEAD
 	background-color: var(--fondoC);
 }
 section{
@@ -143,6 +179,14 @@ section{
  .tCentrado{
  	text-align: center;
  }
+=======
+}
+section{
+	margin-top: 100px;
+	
+	border: var(--border);
+}
+>>>>>>> Guille
 
 /* MEDIA QUERY */
 @media (max-width: 1400px) and (min-width: 1121px){
@@ -154,18 +198,28 @@ section{
 }
 
 @media (max-width: 992px) and (min-width: 769px){
+<<<<<<< HEAD
 	.row1{
+=======
+	.row{
+>>>>>>> Guille
    		display: block;
    	}
 	.c1,.c2{
 		min-width: 46.8%;
 	}
+<<<<<<< HEAD
 	.c3{
 		min-width: 97%;
 	}
 	.c4{
 		min-width: 100%;
 	}
+=======
+	.c3,.c4{
+		min-width: 97%;
+	}
+>>>>>>> Guille
   
 }
 
@@ -173,7 +227,11 @@ section{
 	.conteiner{
 		display: none;
 	}
+<<<<<<< HEAD
    	.row1{
+=======
+   	.row{
+>>>>>>> Guille
    		display: block;
    	}
     .c1,.c2,.c3,.c4{
@@ -192,6 +250,7 @@ section{
    .conteiner{
 		display: none;
 	}
+<<<<<<< HEAD
    	.row1{
    		display: block;
    	}
@@ -209,6 +268,14 @@ section{
     	margin-top: 25px;
     	padding-top:10px;
     	padding-bottom: 10px;
+=======
+   	.row{
+   		display: block;
+   	}
+    .c1,.c2,.c3,.c4{
+    	position: relative;
+    	min-width: 93.5%;
+>>>>>>> Guille
     }
 
 }
@@ -217,7 +284,11 @@ section{
 	.conteiner{
 		display: none;
 	}
+<<<<<<< HEAD
    	.row1{
+=======
+   	.row{
+>>>>>>> Guille
    		display: block;
    	}
     .c1,.c2,.c3,.c4{
@@ -230,7 +301,11 @@ section{
   .conteiner{
 		display: none;
 	}
+<<<<<<< HEAD
    	.row1{
+=======
+   	.row{
+>>>>>>> Guille
    		display: block;
    	}
     .c1,.c2,.c3,.c4{

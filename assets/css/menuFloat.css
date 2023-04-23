@@ -1,5 +1,6 @@
 .menuFlot{
 	
+<<<<<<< HEAD
 	background-color: var(--color2);
 	position: fixed;
 	width: 100%;
@@ -7,14 +8,25 @@
 	top: 0;
 	z-index: 3;
 	transition: all .6s ease;
+=======
+	background-color: var(--color1);
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	z-index: 3;
+>>>>>>> Guille
 	
 
 }
 .menuFlot>div>div>div>.logo{
 	position: relative;
 	height: 50px;
+<<<<<<< HEAD
 	transition: all 1s ease;
 	filter: drop-shadow(2px 2px 5px var(--color4));
+=======
+>>>>>>> Guille
 	
 }
 
@@ -37,6 +49,7 @@
 
 .pagActual{
 	border-bottom: 5px solid var(--color3);
+<<<<<<< HEAD
 }
 
 @media (max-width: 480px){
@@ -47,4 +60,6 @@
 		position: relative;
 		margin-top: -40px;
 	}
+=======
+>>>>>>> Guille
 }
