@@ -1,0 +1,12 @@
+1) Juan va al trabajo en colectivo o en auto. El 63 % de las veces va en colectivo y el resto lo hace en auto. Cuando va en colectivo llega tarde al trabajo el 12 % de las veces, mientras que si va en auto llega tarde al trabajo el 43 % de las veces. Hoy llegó tarde al trabajo, ¿Cuál es la probabilidad de que haya viajado en colectivo?
+
+2) Un sistema tiene dos componentes S1 y S2, y funciona si cualquiera de los componentes funciona. Sabiendo que la probabilidad de que el sistema funcione con S1 es 0.75, la probabilidad de que lo haga con S2 es 0.8, mientras que la probabilidad de que lo haga con ambos es 0.6, calcular:
+
+a) La probabilidad de que el sistema funcione.
+b) La probabilidad de que el sistema funcione sólo con uno de los componentes.
+
+3) En una empresa de componentes informáticos se pretende disminuir el consumo de energía eléctrica mediante la implementación de nuevas luminarias. Según el supervisor, el 20 % de las secciones de la empresa lograrán tal reducción.
+Sabiendo que la empresa cuenta con 8 secciones, determinar: 
+
+a) La probabilidad de que a lo sumo 3 secciones logren tal reducción.
+b) La varianza del número de secciones que se espera reduzcan el consumo eléctrico.
