@@ -5,12 +5,15 @@ window.addEventListener('scroll',function(){
 	let texto1= document.querySelectorAll('.texto');
 	let serv = document.getElementById('servicios');
 	let posServicio = serv.offsetTop;
+	let res= window.innerWidth
 	if(scrTop>=posServicio-350){
 		
 
 
 		texto1[0].style.opacity= '1';
-		texto1[0].style.marginRight = '-150px'
+		if(res>480){
+			texto1[0].style.marginRight = '-150px'
+		}
 		texto1[0].style.boxShadow= '10px 3px 10px var(--color2)'
 
 		
@@ -19,7 +22,9 @@ window.addEventListener('scroll',function(){
 		let t2= document.querySelectorAll('.cs2>.texto');
 
 		t2[0].style.opacity= '1';
-		t2[0].style.marginLeft= '-100px'
+		if(res>480){
+			t2[0].style.marginLeft= '-100px'
+		}
 		t2[0].style.boxShadow= '-10px 3px 10px var(--color2)'
 	}
 	 if(scrTop>=posServicio-200){
