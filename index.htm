@@ -8,7 +8,7 @@
         <!-- ACA SE IMPORTAN LOS ESTILOS QUE VAN EN EL NAV , VA EN TODAS LAS PAGINAS--> 
 
         <link rel="stylesheet" href="assets/css/menuFloat.css">
-
+        <link rel="stylesheet" href="assets/css/nav/burgerMenu.css">
         <!-- ############################################# -->
         <link rel="stylesheet" href="assets/css/inicio/header.css">
         <link rel="stylesheet" href="assets/css/inicio/services.css">
@@ -25,13 +25,19 @@
 	        				<img src="sources/logo.png" alt="" class="logo">
 	        			</div>
 	        			<div class="c3 menuPaginas">
-	        				<a href="" class="pagActual opMenu">Inicio</a>
+	        				<a href="index.htm" class="pagActual opMenu">Inicio</a>
 	        				<a href="" class="opMenu">Comprar</a>
 	        				<a href="" class="opMenu">Alquilar</a>
 	        				<a href="" class="opMenu">Franquicia</a>
 	        				<a href="" class="opMenu">Blog</a>
-	        				<a href="" class="opMenu">Contacto</a>
-	        				<a href="" class="burgerMenu">Menu</a>
+	        				<a href="contacto.html" class="opMenu">Contacto</a>
+	        				<span id="contentMB">
+                    <div id="iconSvg">
+                      <svg>
+                        <image id="abrirMenu" xlink:href="sources/menu.svg"/>
+                      </svg>
+                    </div>
+                  </span>
 	        			</div>
 	        		</div>
         		</div>
@@ -119,6 +125,7 @@
         <footer>
 
         </footer>
+        <script type="module" src="assets/js/menuBurger.js"></script>
         <script type="text/javascript" src="assets/js/muestraFotos.js"></script>
     </body>
 </html>

@@ -143,6 +143,35 @@ section{
  .tCentrado{
  	text-align: center;
  }
+ .hContentCenter{
+ 	display: flex;
+ 	justify-content: center;
+ }
+
+ .parrafo1{
+ 	  font-size: 18px;
+	  line-height: 1.8;
+	  text-align: justify;
+	  color: var(--color5);
+	  margin: 0;
+	  padding: 50px 30px;
+	  background-color: var(--color2);
+	  border: 1px solid #cccccc;
+	  border-radius: 5px;
+	  box-shadow: 2px 2px 5px #cccccc;
+ }
+ .resaltar1{
+ 	color: var(--color3);
+ }
+ .mt-50{
+ 	margin-top: 50px;
+ }
+ .mt-100{
+ 	margin-top: 100px;
+ }
+ .mt-150{
+ 	margin-top: 150px;
+ }
 
 /* MEDIA QUERY */
 @media (max-width: 1400px) and (min-width: 1121px){
