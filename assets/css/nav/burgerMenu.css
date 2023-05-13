@@ -1,8 +1,8 @@
-#contentMB{
-	color: white;
-	margin-top: -11%;
-	position: relative;
-	margin-right: 0;
+#contentMB {
+    color: white;
+    margin-top: -11%;
+    position: relative;
+    margin-right: 0;
 }
 #iconSvg{
 	width: 50px;
@@ -41,4 +41,13 @@
 }
 .mAbierto{
 	display: block;
+}
+
+@media (max-width: 360px){
+	#contentMB {
+	    color: white;
+	    margin-top: -11%;
+	    position: relative;
+	    margin-right: 0;
+	}
 }

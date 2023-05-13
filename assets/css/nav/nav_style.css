@@ -56,7 +56,9 @@ li:hover {
     overflow: hidden;
 }
 
-
+#logoNav{
+    margin-top: 6%;
+}
 
 #flipper > div > div {
     color: #fff;
