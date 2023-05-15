@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inmobiliaria</title>
+  <link rel="stylesheet" href="../assets/css/comprar/styles.css">
+  <link rel="stylesheet" href="../assets/css/inicio/header.css">
+  <link rel="stylesheet" href="../assets/css/menuFloat.css">
+  <link rel="stylesheet" href="../assets/css/grillas.css">   
+  <link rel="stylesheet" href="../assets/css/inicio/services.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function abrirInfo(id) {
+      var win = window.open("", "Info", "width=620,height=620");
+      var card = $("#" + id).clone();
+      card.css({
+        "position": "relative",
+        "top": "0",
+        "left": "0",
+        "width": "100%",
+        "height": "100%",
+        "background-color": "#f9f9f9",
+        "padding": "20px",
+        "border-radius": "5px",
+        "box-shadow": "0 2px 5px rgba(0, 0, 0, 0.1)"
+      });
+    
+      var precio = $("#" + id).data("precio");
+      var descripcion = $("#" + id).data("descripcion");
+    
+      card.append("<p><strong>Precio:</strong> " + precio + " USD</p>");
+      card.append("<p><strong>Descripción:</strong> " + descripcion + "</p>");
+    
+      var title = card.find("h3").first().text();
+      card.find("h3").first().remove();
+      card.prepend("<h2>" + title + "</h2>");
+    
+      var closeButton = "<button onclick='window.close()'>Cerrar</button>";
+      card.find("button").remove();
+      card.append(closeButton)
+    
+      win.document.body.appendChild(card[0]);
+    }
+    
+
+    $(document).ready(function() {
+      $.getJSON("https://sheetdb.io/api/v1/2iybhrayzqwl5", function(data) {
+        $.each(data, function(index, item) {
+          var direccion = item.direccion;
+          var precio = item.precio;
+          var imagen = item.imagen;
+          var id = item.id;
+          var habitaciones = item.habitaciones;
+          var baños = item.baños;
+          var metros_cuadrados = item.metros_cuadrados;
+          var descripcion = item.descripcion;
+          var card = "<div class='card' id='" + id + "' data-precio='" + precio + "' data-descripcion='" + descripcion + "'>" +
+            "<img src='" + imagen + "'>" +
+            "<h3>" + direccion + "</h3>" +
+            "<p><strong>Habitaciones:</strong> " + habitaciones + "</p>" +
+            "<p><strong>Baños:</strong> " + baños + "</p>" +
+            "<p><strong>Metros cuadrados:</strong> " + metros_cuadrados + "</p>" +
+            "<button onclick='abrirInfo(" + id + ")'>Ver información</button>" +
+          "</div>";
+          
+          $("#results").append(card);
+        });
+      })});
+  </script>
+  <nav class="menuFlot">
+    <div class="conteinerRow">
+      <div class="row">
+        <div class="c1">
+          <img src="/sources/logo.png" alt="" class="logo">
+        </div>
+        <div class="c3 menuPaginas">
+          <a href="../index.htm" class="pagActual">Inicio</a>
+          <a href="../pestañas/comprar.html" class="comprar">Comprar</a>
+          <a href="../pestañas/alquilar.html" class="comprar">Alquilar</a>
+          <a href="">Franquicia</a>
+          <a href="">Blog</a>
+          <a href="">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</head>
+<body>
+  
+  <div id="results"></div>
+  <div id="sidebar">
+    <iframe class="responsive-iframe" frameborder="0" scrolling="no" src="https://www.cotizacion-dolar.com.ar/recursos-webmaster/promedios/cotizacion-argentina-300x150.php"></iframe>
+    <form action="#" method="POST" onsubmit="enviarCorreo(event)">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Tu apellido">
+
+      <label for="casa">Casa a consultar:</label>
+      <input type="text" id="casa" name="casa" placeholder="Dirección de la casa">
+
+      <label for="mail">Mail:</label>
+      <input type="email" id="mail" name="mail" placeholder="Tu correo electrónico">
+
+      <label for="consulta">Consulta:</label>
+      <textarea id="consulta" name="consulta" placeholder="Escribe aquí tu consulta"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    function enviarCorreo(event) {
+      event.preventDefault();
+
+      const nombre = document.getElementById('nombre').value;
+      const apellido = document.getElementById('apellido').value;
+      const casa = document.getElementById('casa').value;
+      const mail = document.getElementById('mail').value;
+      const consulta = document.getElementById('consulta').value;
+
+      const link = document.createElement('a');
+      link.href = 'mailto:inmotpo@gmail.com?subject=Nueva consulta de casa&body=Nombre: ' + encodeURIComponent(nombre) + '%0D%0A' + 'Apellido: ' + encodeURIComponent(apellido) + '%0D%0A' + 'Casa a consultar: ' + encodeURIComponent(casa) + '%0D%0A' + 'Mail: ' + encodeURIComponent(mail) + '%0D%0A' + 'Consulta: ' + encodeURIComponent(consulta);
+
+      link.click();
+      document.getElementById('nombre').value = '';
+      document.getElementById('apellido').value = '';
+      document.getElementById('casa').value = '';
+      document.getElementById('mail').value = '';
+      document.getElementById('consulta').value = '';
+    }
+  </script>
+</body>
+</html>
