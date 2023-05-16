@@ -14,16 +14,9 @@ body {
   padding: 20px;
   box-sizing: border-box;
   z-index: 9999;
+  overflow-y: hidden;
 }
 
-@media screen and (max-width: 480px) {
-  #sidebar {
-    width: 100%;
-    position: relative;
-    height: auto;
-    padding: 0;
-  }
-}
 
 header {
   background-color: #222;
@@ -162,5 +155,17 @@ button[type="submit"]:hover {
   form {
     max-width: 100%;
     margin-bottom: 60px;
+  }
+
+  #sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    padding: 0;
+}
+}
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+  #sidebar {
+    overflow-y: auto;
   }
 }
