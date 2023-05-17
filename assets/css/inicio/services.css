@@ -95,5 +95,13 @@
 	.contentServicio>div{
 		width: 360px;
 	}
-
+	
+	.contentServicio>.texto {
+	    width: 86%;
+	    margin-top: -64%;
+	    margin-left: -25px;
+	}
+	.contentServicio>.foto{
+		width: 100%;
+	}
 }
