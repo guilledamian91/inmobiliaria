@@ -8,7 +8,7 @@ window.addEventListener('load',()=>{
 	menu.addOpcion('Comprar','#')
 	menu.addOpcion('Alquilar','#')
 	menu.addOpcion('Franquicia','#')
-	menu.addOpcion('Blog','#')
+	menu.addOpcion('Blog','blog.html')
 	menu.addOpcion('Contacto','contacto.html')
 	contenedor.appendChild(menu.menu)
 })
