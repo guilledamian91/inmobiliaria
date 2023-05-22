@@ -14,7 +14,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
   z-index: 9999;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 
@@ -134,6 +134,49 @@ button[type="submit"]:hover {
   width: 100%;
   height: auto;
 }
+footer {
+  background-color: var(--color2);
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  padding-left:25vh;
+}
+
+.containerRow {
+  display: flex;
+  justify-content: center;
+}
+
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.c2 {
+  width: 50%;
+  padding: 10px;
+}
+
+.alumno {
+  margin-bottom: 20px;
+  color:white;
+}
+
+.alumno img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.alumno h2 {
+  margin-top: 10px;
+}
+
+.logoGrupo img {
+  width: 150px;
+  height: auto;
+}
 
 @media screen and (max-width: 480px) {
   body {
@@ -162,10 +205,49 @@ button[type="submit"]:hover {
     position: relative;
     height: auto;
     padding: 0;
+  }
+
+
+  .c2 {
+  width: 100%;
+  padding: 5px;
+  }
+
+  .alumno img {
+  width: 50px;
+  height: 50px;
+  }
+
+  .logoGrupo img {
+  width: 300px;
+  }
 }
-}
-@media screen and (min-width: 1024px) and (min-height: 600px) {
+
+
+@media screen and (min-width: 676px) and (min-height: 600px) {
   #sidebar {
     overflow-y: auto;
+  }
+  form {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+  .alumno h2 {
+    margin-top: 10px;
+    font-size: small;
+  }
+  
+  .c2 {
+    width: 20%;
+    padding: 10px;
+  }
+
+  .alumno img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logoGrupo img {
+    width: 100px;
   }
 }
