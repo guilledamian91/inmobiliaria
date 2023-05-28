@@ -2,12 +2,19 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Inmobiliaria</title>
+  <title>Alquilar</title>
+  <link rel="icon" type="image/icon" sizes="32x32" href="../sources/menu y icon/favicon32x32_mejorado.ico">
+  <link rel="icon" type="image/icon" sizes="16x16" href="../sources/menu y icon/favicon16x16_Mejorado.ico">
   <link rel="stylesheet" href="../assets/css/comprar/styles.css">
-  <link rel="stylesheet" href="../assets/css/inicio/header.css">
-  <link rel="stylesheet" href="../assets/css/menuFloat.css">
+  <!-- <link rel="stylesheet" href="../assets/css/inicio/header.css"> -->
+  <!-- <link rel="stylesheet" href="../assets/css/menuFloat.css"> -->
   <link rel="stylesheet" href="../assets/css/grillas.css">   
   <link rel="stylesheet" href="../assets/css/inicio/services.css">
+   <!-- NAVVVVVV Es desktop la sigueinte linea, la segunda es tables y mobile-->
+   <link rel="stylesheet" media="(min-width: 1024px)" href="../assets/css/Franquicia/menuFloat.css">
+   <link rel="stylesheet" media="(max-width: 1023px)" href="../assets/css/Franquicia/menu-celulares.css">
+   <link rel="stylesheet" href="../assets/css/Franquicia/footer_ff_gm.css">
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     function abrirInfo(id) {
@@ -44,6 +51,8 @@
     
 
     $(document).ready(function() {
+            // COMENTO LA SIGUIENTE LINEA DE CODIGO PARA QUE NO SE GASTE LA API
+
       $.getJSON("https://sheetdb.io/api/v1/2iybhrayzqwl5", function(data) {
         $.each(data, function(index, item) {
           var direccion = item.direccion;
@@ -69,22 +78,51 @@
   </script>
   <nav class="menuFlot">
     <div class="conteinerRow">
-      <div class="row">
-        <div class="c1">
-          <img src="/sources/logo.png" alt="" class="logo">
-        </div>
-        <div class="c3 menuPaginas">
-          <a href="../index.html" class="pagActual">Inicio</a>
-          <a href="comprar.html" class="comprar">Comprar</a>
-          <a href="alquilar.html" class="comprar">Alquilar</a>
-          <a href="franquicia.html">Franquicia</a>
-          <a href="blog.html">Blog</a>
-          <a href="contacto.html">Contacto</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+        <div class="row1">
+            <div class="c1">
+                
+                <img src="../sources/logo.png" alt="Logo Inmobiliaria" class="logo" >
+                
+                <!-- <img src="sources/logo.png" alt="" class="logo"> -->
+            </div>
 
+          
+            <div class="c3 menuPaginas  ">
+                <a href="../index.html" class=" opMenu">Inicio</a>
+                <a href="comprar.html" class="opMenu">Comprar</a>
+               <a href="alquilar.html" class="opMenu pagActual">Alquilar</a>
+               <a href="blog.html" class="opMenu">Blog</a>
+                 <a href="franquicia.html" class="opMenu">Franquicia</a>
+                 <a href="contacto.html" class="opMenu">Contacto</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="menu-smartphone" style="padding-bottom: 50px;">
+    <div class="c1ABC">
+                
+        <img src="../sources/logo.png" alt="Logo Inmobiliaria" class="logo" >
+        
+        <!-- <img src="sources/logo.png" alt="" class="logo"> -->
+
+        <nav class="nav">
+            <!-- <button class="toggle-button">menú</button> -->
+            <img src="../sources/menu y icon/icons8-menu-rounded-50x50-diseñocorrecto.png" alt="Botón de menú" class="toggle-button">
+          </nav>
+    </div>
+
+    
+   
+    <div class="c3 menuPaginas  menu" style="width: 90%;">
+        <div class="menu-item">  <a href="../index.html" class=" opMenu">Inicio</a></div>
+        <div class="menu-item"> <a href="comprar.html" class="opMenu">Comprar</a></div>
+        <div class="menu-item"><a href="alquilar.html" class="opMenu pagActual">Alquilar</a></div>
+        <div class="menu-item"> <a href="blog.html" class="opMenu">Blog</a></div>
+        <div class="menu-item"> <a href="franquicia.html" class="opMenu">Franquicia</a></div>
+        <div class="menu-item"> <a href="contacto.html" class="opMenu">Contacto</a></div>
+    </div>
+</div>
 </head>
 <body>
   
@@ -107,7 +145,7 @@
       <label for="consulta">Consulta:</label>
       <textarea id="consulta" name="consulta" placeholder="Escribe aquí tu consulta"></textarea>
 
-      <button type="submit">Enviar</button>
+      <button class="espacio" type="submit" >Enviar</button>
     </form>
   </div>
 
@@ -133,29 +171,31 @@
     }
   </script>
 </body>
-<footer>
-  <div class="conteinerRow">
-      <div class="row1">
-        <div class="c2">
-          <article class="alumno">
-            <img src="../sources/hombre.png" alt="">
-            <h2>Guillermo Perez Maidana</h2>
-          </article>
-          <article class="alumno">
-            <img src="../sources/hombre (2).png" alt="">
-            <h2>Francisco N. Fonseca</h2>
-          </article>
-          <article class="alumno">
-            <img src="../sources/hombre (3).png" alt="">
-            <h2>Juan Becerra</h2>
-          </article>
-        </div>
-        <div class="c2 logoGrupo">
-            <img src="../sources/logoG19.png" alt="">
-        </div>
-      </div>
-    </div>
+<footer style=" border-top: 1px solid  #e5e5e5;">
+  <div class="cajanegra">
+            <div class="row1">
+              <div class="c2">
+                <article class="alumno">
+                  <img src="../sources/hombre.png" alt="Agente Inmobiliario">
+                  <h2>Guillermo Perez Maidana</h2>
+                </article>
+                <article class="alumno">
+                  <img src="../sources/hombre (2).png" alt="Agente Inmobiliario">
+                  <h2>Francisco N. Fonseca</h2>
+                </article>
+                <article class="alumno">
+                  <img src="../sources/hombre (3).png" alt="Agente Inmobiliario">
+                  <h2>Juan Becerra</h2>
+                </article>
+              </div>
+              <div class="c2 logoGrupo">
+                <img src="../sources/logoG19.png" alt="">
+              </div>
+            </div>
+          </div>
 </footer>
-<script type="module" src="../assets/js/menuBurger.js"></script>
+<!-- <script type="module" src="../assets/js/menuBurger.js"></script> -->
 <script type="text/javascript" src="../assets/js/muestraFotos.js"></script>
+<script src="../assets/js/Franquicia/botonmenu.js"></script>
+
 </html>
