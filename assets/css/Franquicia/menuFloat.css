@@ -39,7 +39,7 @@
 	border-bottom: 5px solid var(--color3);
 }
 
-@media (max-width: 480px){
+/* @media (max-width: 480px){
 	.menuPaginas>.opMenu{
 		display: none;
 	}
@@ -47,4 +47,15 @@
 		position: relative;
 		margin-top: -40px;
 	}
+} */
+
+.menu-smartphone{
+	display: none;
 }
+
+
+
+	button.espacio{
+		margin-bottom: 15px;
+
+	}
