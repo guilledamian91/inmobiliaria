@@ -86,8 +86,8 @@
 
     border-radius: 10px;
 
-margin-left: 10px;
-margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     
   }
 
@@ -164,7 +164,10 @@ margin-right: 10px;
   padding-left: 7%;
 }
 
-
+#sidebar{
+  top:155px;
+  overflow-y:auto;
+}
 
 /* iPhone SE - 320x568
 @media (max-width: 375px) and (min-height: 667px) {
@@ -201,8 +204,6 @@ margin-top: 30px;
   padding-left: 30%;
 }
 
-}
-
 #sidebar{
   top: 155px;
 }
@@ -213,4 +214,6 @@ margin-top: 30px;
 
 .c3.menuPaginas.menu {
   margin-left: -4%;
+}
+
 }
