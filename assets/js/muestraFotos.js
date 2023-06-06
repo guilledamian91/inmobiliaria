@@ -27,7 +27,7 @@ function automatizar(){
 
 
 	setInterval(function(){
-		//fotos = document.querySelectorAll('.muestra');
+
 		pos-=desplazamiento;
 
 		if(pos>final){

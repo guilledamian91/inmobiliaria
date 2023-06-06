@@ -6,7 +6,7 @@ body {
 }
 #sidebar {
   position: fixed;
-  top: 100px;
+  top: 70px;
   left: 0;
   width: 300px; 
   height: 100vh; 
@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
   z-index: 9999;
   overflow-y: auto;
+  
 }
 
 
@@ -178,6 +179,10 @@ footer {
   height: auto;
 }
 
+.menuflot{
+  position: fixed;
+}
+
 @media screen and (max-width: 480px) {
   body {
     margin-top: 50px;
@@ -221,13 +226,16 @@ footer {
   .logoGrupo img {
   width: 300px;
   }
+  .menuflot{
+    position: fixed;
+  }
 }
 
 
-@media screen and (min-width: 676px) and (min-height: 600px) {
-  #sidebar {
-    overflow-y: auto;
-  }
+  
+
+@media screen and (min-width: 676px) and (min-height: 850px) {
+
   form {
     max-width: 100%;
     margin-bottom: 60px;
@@ -249,5 +257,14 @@ footer {
 
   .logoGrupo img {
     width: 100px;
+  }
+  .menuflot{
+    position: fixed;
+  }
+}
+
+@media (min-height: 1027px){
+  #sidebar {
+    overflow-y: auto;
   }
 }
