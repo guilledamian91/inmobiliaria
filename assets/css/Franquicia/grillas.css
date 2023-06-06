@@ -1,8 +1,4 @@
 :root{
-	/*--border: 1px solid red;
-
-	/*--fondoF: #9DDB89FF;
-	--fondoC: #DADC74FF;*/
 	--color1: #000000;
 	--color2:#14213d;
 	--color3: #fca311;
@@ -65,11 +61,7 @@ body{
 	position: relative;
 	float: left;
 	width: 100%;
-	/* min-width:100%; */
-	/* margin: 10px 10px; */
 	border: var(--border);
-	/* margin-top: 5px; */
-	/* margin-bottom: 5px; */
 	background-color: var(--fondoC);
 }
 .c4{
@@ -83,12 +75,6 @@ body{
 	margin-bottom: 5px;
 	background-color: var(--fondoC);
 }
-/* section{
-	margin-top: 100px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	border: var(--border);
-} */
 .anchoCompleto{
 	width: 100% !important;
 }

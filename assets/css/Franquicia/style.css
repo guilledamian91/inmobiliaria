@@ -161,9 +161,7 @@ footer {
 }
 
 .garanty.home {
-  vertical-align: top
-
-  /* text-align: justify; */
+  vertical-align: top;
 
   align-self: flex-end;
 
@@ -184,7 +182,7 @@ display:inline-block;
 .caja{
   justify-content: space-between;
 
-/* justify-content: center; */
+
 
   flex-direction: column;
 
@@ -197,18 +195,18 @@ width: 100%;
 .caja {
   cursor: pointer;
 
-  /* align-items: flex-start; */
+ 
 
   display: flex;
   flex-direction: row;
   background-color: var(--pagina);
   flex-grow: 1;
-  /* aspect-ratio: 16/9; */
+
   width: 100%;
   flex-wrap: wrap;
   box-sizing: border-box;
   padding: 1rem;
-  /* margin: 3rem; */
+
   margin: 100px;
  
 }
@@ -234,60 +232,6 @@ body{
 }
 
 
-/* #cartel {
- 
-
-
-  display: none;
-  position: absolute;
-  background-color:  rgba(255, 221, 51, 0.9);
-
-  border: 1px solid black;
-  padding: 5px;
-  cursor: pointer;
-} */
-
-
-/* #nuevaVentanaRemax:hover + #cartel {
-  display: block;
-}
-#nuevaVentanaRemax:not(:hover) + #cartel {
-  display: none;
-} */
-/* 
-
-#cartel {
-  position: absolute;
-  display: none;
-  top: 0;
-  left: 0;
-}
-
-#mouse1:hover + #cartel,
-#mouse2:hover + #cartel, 
-#mouse3:hover + #cartel,
-#mouse4:hover + #cartel{
-  display: block;
-}
-
-#cartel:hover {
-  display: block;
-}
-
-#cartel:after {
-  /* content: "Saber más";
-  font-size: 14px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 8px; */
-  /* position: absolute;
-  top: 10px;
-  left: 10px;
-  border-radius: 4px;
-  pointer-events: none;
-} */ 
-
-
 #nuevaVentanaGarantyHome ,
 #nuevaVentanaRemax{
   opacity: 0.1;
@@ -306,7 +250,7 @@ body{
     transform: translateY(0px);
     opacity: 0.5; 
   }
-  88% to 95% {
+  95% {
     transform: translateY(0px);
     opacity: 0.5; 
   }
@@ -316,16 +260,12 @@ body{
   }
 }
 
-/* A partir de 1024 se hace todo lo siguiente */
+
 @media screen and (min-width: 912px) {
 .caja{
-    /* display: flex; */
-    /* overflow: hidden; */
-    /* flex-direction: row;
-    justify-content: space-between;
-    align-items: center; */
+
     display: flex;
-    flex-wrap: wrap; /* para que los elementos se ajusten al ancho del contenedor */
+    flex-wrap: wrap; 
 }
 .garanty.home{
   flex: 1 1 40%;
@@ -362,7 +302,7 @@ body{
 
  .banco{
   margin: 0px;
-  /* padding: 0px; */
+
   gap: 10px;
  }
  .caja{
