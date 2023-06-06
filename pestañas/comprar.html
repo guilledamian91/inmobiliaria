@@ -6,83 +6,21 @@
   <link rel="icon" type="image/icon" sizes="32x32" href="../sources/menu y icon/favicon32x32_mejorado.ico">
   <link rel="icon" type="image/icon" sizes="16x16" href="../sources/menu y icon/favicon16x16_Mejorado.ico">
   <link rel="stylesheet" href="../assets/css/comprar/styles.css">
-  <!-- <link rel="stylesheet" href="../assets/css/inicio/header.css"> -->
-  <!-- <link rel="stylesheet" href="../assets/css/menuFloat.css"> -->
   <link rel="stylesheet" href="../assets/css/grillas.css">   
   <link rel="stylesheet" href="../assets/css/inicio/services.css">
-   <!-- NAVVVVVV Es desktop la sigueinte linea, la segunda es tables y mobile-->
-   <link rel="stylesheet" media="(min-width: 1024px)" href="../assets/css/Franquicia/menuFloat.css">
-   <link rel="stylesheet" media="(max-width: 1023px)" href="../assets/css/Franquicia/menu-celulares.css">
-   <link rel="stylesheet" href="../assets/css/Franquicia/footer_ff_gm.css">
+  <link rel="stylesheet" media="(min-width: 1024px)" href="../assets/css/Franquicia/menuFloat.css">
+  <link rel="stylesheet" media="(max-width: 1023px)" href="../assets/css/Franquicia/menu-celulares.css">
+  <link rel="stylesheet" href="../assets/css/Franquicia/footer_ff_gm.css">
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    function abrirInfo(id) {
-      var win = window.open("", "Info", "width=620,height=620");
-      var card = $("#" + id).clone();
-      card.css({
-        "position": "relative",
-        "top": "0",
-        "left": "0",
-        "width": "100%",
-        "height": "100%",
-        "background-color": "#f9f9f9",
-        "padding": "20px",
-        "border-radius": "5px",
-        "box-shadow": "0 2px 5px rgba(0, 0, 0, 0.1)"
-      });
-    
-      var precio = $("#" + id).data("precio");
-      var descripcion = $("#" + id).data("descripcion");
-    
-      card.append("<p><strong>Precio:</strong> " + precio + " USD</p>");
-      card.append("<p><strong>Descripción:</strong> " + descripcion + "</p>");
-    
-      var title = card.find("h3").first().text();
-      card.find("h3").first().remove();
-      card.prepend("<h2>" + title + "</h2>");
-    
-      var closeButton = "<button onclick='window.close()'>Cerrar</button>";
-      card.find("button").remove();
-      card.append(closeButton)
-    
-      win.document.body.appendChild(card[0]);
-    }
-    
+  <script src="../assets/js/apicompra.js"></script>
+  <script src="../assets/js/enviarcorreo.js"></script>
 
-    $(document).ready(function() {
-      // COMENTO LA SIGUIENTE LINEA DE CODIGO PARA QUE NO SE GASTE LA API
-      $.getJSON("https://sheetdb.io/api/v1/mtonetyh771as", function(data) {
-        $.each(data, function(index, item) {
-          var direccion = item.direccion;
-          var precio = item.precio;
-          var imagen = item.imagen;
-          var id = item.id;
-          var habitaciones = item.habitaciones;
-          var baños = item.baños;
-          var metros_cuadrados = item.metros_cuadrados;
-          var descripcion = item.descripcion;
-          var card = "<div class='card' id='" + id + "' data-precio='" + precio + "' data-descripcion='" + descripcion + "'>" +
-            "<img src='" + imagen + "'>" +
-            "<h3>" + direccion + "</h3>" +
-            "<p><strong>Habitaciones:</strong> " + habitaciones + "</p>" +
-            "<p><strong>Baños:</strong> " + baños + "</p>" +
-            "<p><strong>Metros cuadrados:</strong> " + metros_cuadrados + "</p>" +
-            "<button onclick='abrirInfo(" + id + ")'>Ver información</button>" +
-          "</div>";
-          
-          $("#results").append(card);
-        });
-      })});
-  </script>
   <nav class="menuFlot">
     <div class="conteinerRow">
         <div class="row1">
             <div class="c1">
-                
                 <img src="../sources/logo.png" alt="Logo Inmobiliaria" class="logo" >
-                
-                <!-- <img src="sources/logo.png" alt="" class="logo"> -->
             </div>
 
           
@@ -102,11 +40,7 @@
     <div class="c1ABC">
                 
         <img src="../sources/logo.png" alt="Logo Inmobiliaria" class="logo logomobile" >
-        
-        <!-- <img src="sources/logo.png" alt="" class="logo"> -->
-
         <nav class="nav">
-            <!-- <button class="toggle-button">menú</button> -->
             <img src="../sources/menu y icon/icons8-menu-rounded-50x50-diseñocorrecto.png" alt="Botón de menú" class="toggle-button">
           </nav>
     </div>
@@ -128,7 +62,9 @@
 <body >
   <div id="results"></div>
 
+   <!-- *FORMULARIO* -->
   <div id="sidebar">
+    <!-- IFRAME DOLAR -->
     <iframe class="responsive-iframe" frameborder="0" scrolling="no" src="https://www.cotizacion-dolar.com.ar/recursos-webmaster/promedios/cotizacion-argentina-300x150.php"></iframe>
     <form action="#" method="POST" onsubmit="enviarCorreo(event)">
       <label for="nombre">Nombre:</label>
@@ -149,29 +85,9 @@
       <button type="submit">Enviar</button>
     </form>
   </div>
-
-  <script>
-    function enviarCorreo(event) {
-      event.preventDefault();
-
-      const nombre = document.getElementById('nombre').value;
-      const apellido = document.getElementById('apellido').value;
-      const casa = document.getElementById('casa').value;
-      const mail = document.getElementById('mail').value;
-      const consulta = document.getElementById('consulta').value;
-
-      const link = document.createElement('a');
-      link.href = 'mailto:inmotpo@gmail.com?subject=Nueva consulta de casa&body=Nombre: ' + encodeURIComponent(nombre) + '%0D%0A' + 'Apellido: ' + encodeURIComponent(apellido) + '%0D%0A' + 'Casa a consultar: ' + encodeURIComponent(casa) + '%0D%0A' + 'Mail: ' + encodeURIComponent(mail) + '%0D%0A' + 'Consulta: ' + encodeURIComponent(consulta);
-
-      link.click();
-      document.getElementById('nombre').value = '';
-      document.getElementById('apellido').value = '';
-      document.getElementById('casa').value = '';
-      document.getElementById('mail').value = '';
-      document.getElementById('consulta').value = '';
-    }
-  </script>
 </body>
+
+<!-- FOOTER CON IMAGENES DEL GRUPO Y NOMBRES -->
 <footer style=" border-top: 1px solid  #e5e5e5;">
   <div class="cajanegra">
             <div class="row1">
@@ -195,7 +111,6 @@
             </div>
           </div>
 </footer>
-<!-- <script type="module" src="../assets/js/menuBurger.js"></script> -->
 <script type="text/javascript" src="../assets/js/muestraFotos.js"></script>
 <script src="../assets/js/Franquicia/botonmenu.js"></script>
 
