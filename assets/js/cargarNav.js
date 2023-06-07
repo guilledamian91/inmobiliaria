@@ -1,7 +1,16 @@
-import Nav from './classNav.js'
+import Nav from './classNav.js'	
+
+
 
 let c = document.getElementById('navegacion')
 
 window.addEventListener('load',()=>{
-	c.appendChild(new Nav("48x48menu.png",["Inicio","Comprar","Alquilar","Blog","Franquicia","Contacto"],["./","./pestañas/comprar.html","./pestañas/alquilar.html","./pestañas/blog.html","./pestañas/franquicia.html","./pestañas/contacto.html"]))
+	let who = window.location.pathname
+	
+	if(who=="/inmobiliaria/"||who=="/inmobiliaria/index.html"){
+		c.appendChild(new Nav("logo.png",["Inicio","Comprar","Alquilar","Blog","Franquicia","Contacto"],["./","./pestañas/comprar.html","./pestañas/alquilar.html","./pestañas/blog.html","./pestañas/franquicia.html","./pestañas/contacto.html"]))	
+	}else{
+		c.appendChild(new Nav("../logo.png",["Inicio","Comprar","Alquilar","Blog","Franquicia","Contacto"],["../","comprar.html","alquilar.html","blog.html","franquicia.html","contacto.html"]))
+	}
+	
 })

@@ -35,5 +35,8 @@ header{
 	.isotipo{
 		width: 40%;
 	}
+	.botonesFlyer{
+		gap:10px;
+	}
 }
 
