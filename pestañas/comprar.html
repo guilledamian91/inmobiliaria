@@ -1,60 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <meta charset="UTF-8">
   <title>Comprar</title>
   <link rel="icon" type="image/icon" sizes="32x32" href="../sources/menu y icon/favicon32x32_mejorado.ico">
   <link rel="icon" type="image/icon" sizes="16x16" href="../sources/menu y icon/favicon16x16_Mejorado.ico">
   <link rel="stylesheet" href="../assets/css/comprar/styles.css">
-  <link rel="stylesheet" href="../assets/css/grillas.css">   
+  <link rel="stylesheet" href="../assets/css/comprar/grillas.css">   
   <link rel="stylesheet" href="../assets/css/inicio/services.css">
-  <link rel="stylesheet" media="(min-width: 1000px)" href="../assets/css/Franquicia/menuFloat.css">
-  <link rel="stylesheet" media="(max-width: 1000px)" href="../assets/css/Franquicia/menu-celulares.css">
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../assets/js/apicompra.js"></script>
   <script src="../assets/js/enviarcorreo.js"></script>
 
-  <nav class="menuFlot">
-    <div class="conteinerRow">
-        <div class="row1">
-            <div class="c1">
-                <img src="../sources/logo.png" alt="Logo Inmobiliaria" class="logo" >
-            </div>
+  <link rel="stylesheet" href="../assets/css/menuFloat.css">
+  <link rel="stylesheet" href="../assets/css/navBarClass.css">
+  <script type="module" src="../assets/js/cargarNav.js"></script>
+  
 
-          
-            <div class="c3 menuPaginas  ">
-                <a href="../index.html" class=" opMenu">Inicio</a>
-                <a href="comprar.html" class="opMenu pagActual">Comprar</a>
-               <a href="alquilar.html" class="opMenu">Alquilar</a>
-               <a href="blog.html" class="opMenu">Blog</a>
-                 <a href="franquicia.html" class="opMenu">Franquicia</a>
-                 <a href="contacto.html" class="opMenu">Contacto</a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-  <div class="menu-smartphone" style="padding-bottom: 50px">
-    <div class="c1ABC">
-      <img src="../sources/logo.png" alt="Logo Inmobiliaria" class="logo logomobile" >
-      <nav class="nav">
-        <img src="../sources/menu y icon/icons8-menu-rounded-50x50-diseñocorrecto.png" alt="Botón de menú" class="toggle-button">
-      </nav>
-    </div>
-    <div class="c3 menuPaginas  menu" style="width: 90%;">
-        <div class="menu-item">  <a href="../index.html" class=" opMenu">Inicio</a></div>
-        <div class="menu-item"> <a href="comprar.html" class="opMenu pagActual">Comprar</a></div>
-        <div class="menu-item"><a href="alquilar.html" class="opMenu">Alquilar</a></div>
-        <div class="menu-item"> <a href="blog.html" class="opMenu">Blog</a></div>
-        <div class="menu-item"> <a href="franquicia.html" class="opMenu">Franquicia</a></div>
-        <div class="menu-item"> <a href="contacto.html" class="opMenu">Contacto</a></div>
-    </div>
-  </div>
-
-
+  <nav id="navegacion"></nav>
 </head>
 <body >
+  
   <div id="results"></div>
 
    <!-- *FORMULARIO* -->
@@ -106,7 +76,5 @@
             </div>
           </div>
 </footer>
-<script type="text/javascript" src="../assets/js/muestraFotos.js"></script>
-<script src="../assets/js/Franquicia/botonmenu.js"></script>
 
 </html>
