@@ -109,8 +109,8 @@
 
 .menu-smartphone{
   display: flex;
-  align-items: flex-start; /* Alinear elementos en la parte superior */
-  flex-direction: column; /* Alinear elementos en una columna */
+  align-items: flex-start; 
+  flex-direction: column;
 
   
 }
@@ -118,7 +118,7 @@
 .c1ABC {
   display: flex;
   align-items: center;
-  margin-right: 10px; /* Espacio entre la imagen y el botón */
+  margin-right: 10px; 
 
   width: 100%;
 
