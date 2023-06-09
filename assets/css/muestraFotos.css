@@ -1,12 +1,12 @@
 .muestra{
-	position: relative;
-
-	width: 100%;
-	min-width: 100%;
-	height: 500px;
-	flex-shrink: 2;
-	transition: all 1s ease;
-	left: 0px;
+	    position: relative;
+    width: 100%;
+    min-width: 100%;
+    /* height: 500px; */
+    aspect-ratio: 2/1;
+    flex-shrink: 2;
+    transition: all 1s ease;
+    left: 0px;
 }
 
 #fotosContent{
