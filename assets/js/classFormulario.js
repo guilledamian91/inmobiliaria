@@ -6,6 +6,11 @@ class Formulario{
 		this.formulario= document.createElement('form')
 		this.formulario.setAttribute('id',id)
 
+		this.formulario.addEventListener('submit',e=>{
+			e.preventDefault()
+
+		})
+
 	}
 
 	addBox(name,id,placeholder,tipo){
