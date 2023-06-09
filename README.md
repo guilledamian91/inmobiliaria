@@ -32,7 +32,7 @@ Contacto
 
 Los usuarios pueden enviar mensajes y comentarios al equipo del sitio web. También incluye un menú de navegación, encabezado con una breve descripción, y un pie de página. El formulario de contacto permite a los usuarios dejar sus mensajes y proporciona una manera fácil de comunicarse con el sitio web.
 
-Franquicia
+Franquicia      (Francisco Nahuel Fonseca , Alias : fran82 o fran082)
 
 Muestra información sobre dos franquicias inmobiliarias: Garanty Home y Remax Argentina. La página incluye un menú de navegación, secciones con imágenes y descripciones de cada franquicia, y enlaces a sitios externos para obtener más información sobre ellas.
 
