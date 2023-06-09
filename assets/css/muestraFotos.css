@@ -3,7 +3,7 @@
     width: 100%;
     min-width: 100%;
     /* height: 500px; */
-    aspect-ratio: 2/1;
+    aspect-ratio: 16/9;
     flex-shrink: 2;
     transition: all 1s ease;
     left: 0px;
