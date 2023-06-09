@@ -1,7 +1,7 @@
 
 # Inmobiliaria
 
-Es una pagina web creada para TPO fullstack de codo a codo, en ella encontraras secciones donde podras consultar por alguna propiedad ofrecida tanto para la compra como un alquiler, tambien una seccion de franquicias que porponemos en conjunto.
+Es una pagina web creada para TPO fullstack de codo a codo, en ella encontraras secciones donde podras consultar por alguna propiedad ofrecida tanto para la compra como un alquiler, tambien una seccion de franquicias que proponemos en conjunto.
 
 
 ![Logo](https://raw.githubusercontent.com/guilledamian91/inmobiliaria/main/sources/logo.png)
@@ -34,9 +34,13 @@ Los usuarios pueden enviar mensajes y comentarios al equipo del sitio web. Tambi
 
 franquicia
 
-muestra información sobre dos franquicias inmobiliarias: Garanty Home y Remax Argentina. La página incluye un menú de navegación, secciones con imágenes y descripciones de cada franquicia, y enlaces a sitios externos para obtener más información sobre ellas.
+Muestra información sobre dos franquicias inmobiliarias: Garanty Home y Remax Argentina. La página incluye un menú de navegación, secciones con imágenes y descripciones de cada franquicia, y enlaces a sitios externos para obtener más información sobre ellas.
+Los div de las Franquicias son clikeables y te llevan a sus paginas oficiales para que puedas ponerte en contacto.
+Pagina responsive.
+El menu desktop y menu para smartphone y tablet esta en dos archivos .css diferentes. En la carpeta assets/franquicia menu-Float.css y menu-celulares.css
 
 La página también presenta secciones adicionales con información sobre préstamos bancarios y un pie de página con los nombres de los desarrolladores del sitio.
+
 ## API Reference
 
 #### Api de la compra y alquiler
