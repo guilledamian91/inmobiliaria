@@ -20,7 +20,7 @@ Inicio      (Juan Becerra ,  [@juan-becerra](https://github.com/jb-2015) )
 
 Proporciona información sobre la empresa y sus servicios, incluyendo la opción de comprar, alquilar y emprender. La página incluye un menú de navegación, encabezado con un eslogan llamativo y botones de acción, secciones de imágenes destacadas y servicios ofrecidos, así como un pie de página con información sobre el equipo y el logotipo del grupo.
 
-Alquilar y Compra       (Guillermo Maidana  ,  [@guilledamian91](https://github.com/guilledamian91) )
+Alquilar y Compra       (Guillermo Pérez Maidana  ,  [@guilledamian91](https://github.com/guilledamian91) )
 
 Permite a los usuarios buscar y consultar propiedades para alquilar. La página incluye un menú de navegación en la parte superior y en versión para dispositivos móviles, un formulario para enviar consultas sobre las propiedades de interés, información sobre la cotización del dólar, y un pie de página con imágenes y nombres del equipo de trabajo.
 En las casas se pueden observar la animación del zoom cuando se posiciona el mouse en ella.
