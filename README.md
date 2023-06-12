@@ -16,23 +16,21 @@ Es una pagina web creada para TPO fullstack de codo a codo, en ella encontraras 
 
 ## Descripcion de cada pestaña
 
-Inicio (Juan Becerra , - [@juan-becerra](https://github.com/jb-2015) )
+Inicio      (Juan Becerra ,  [@juan-becerra](https://github.com/jb-2015) )
 
 Proporciona información sobre la empresa y sus servicios, incluyendo la opción de comprar, alquilar y emprender. La página incluye un menú de navegación, encabezado con un eslogan llamativo y botones de acción, secciones de imágenes destacadas y servicios ofrecidos, así como un pie de página con información sobre el equipo y el logotipo del grupo.
 
-Alquilar y Comprar (Guillermo Maidana , - [@guilledamian91](https://github.com/guilledamian91) )
+Alquilar y Compra       (Guillermo Maidana  ,  [@guilledamian91](https://github.com/guilledamian91) )
 
 Permite a los usuarios buscar y consultar propiedades para alquilar. La página incluye un menú de navegación en la parte superior y en versión para dispositivos móviles, un formulario para enviar consultas sobre las propiedades de interés, información sobre la cotización del dólar, y un pie de página con imágenes y nombres del equipo de trabajo.
+En las casas se pueden observar la animación del zoom cuando se posiciona el mouse en ella.
 
-Blog  (Juan Becerra , - [@juan-becerra](https://github.com/jb-2015) )
+Blog      (Juan Becerra ,  [@juan-becerra](https://github.com/jb-2015) )
 
 Incluye un menú de navegación, encabezado, contenido principal con dos entradas de blog, y un pie de página. Las entradas de blog contienen imágenes y descripciones detalladas sobre temas relacionados con la compra de una casa por primera vez y consejos para alquilar. Además, se muestra información sobre la fecha de publicación y el autor de cada entrada.
+En las imagenes de casas hay una animación.
 
-Contacto  (Juan Becerra , - [@juan-becerra](https://github.com/jb-2015) )
-
-Los usuarios pueden enviar mensajes y comentarios al equipo del sitio web. También incluye un menú de navegación, encabezado con una breve descripción, y un pie de página. El formulario de contacto permite a los usuarios dejar sus mensajes y proporciona una manera fácil de comunicarse con el sitio web.
-
-Franquicia      (Francisco Nahuel Fonseca , - [@fran82](https://github.com/fran082) )
+Franquicia        (Francisco Nahuel Fonseca ,  [@fran82](https://github.com/fran082) )
 
 Muestra información sobre dos franquicias inmobiliarias: Garanty Home y Remax Argentina. La página incluye un menú de navegación, secciones con imágenes y descripciones de cada franquicia, y enlaces a sitios externos para obtener más información sobre ellas.
 
