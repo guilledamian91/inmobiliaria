@@ -14,15 +14,15 @@
     justify-content: space-between;
 }
 .logoContent{
-	    position: relative;
+	position: relative;
     width: 250px;
     height: 100%;
     display: flex;
 }
 .logoNav{
 	position: relative;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     margin: auto;
     filter: drop-shadow(0px 0px 5px white);
 }
@@ -40,11 +40,19 @@
 	    margin: auto;
     color: white;
     text-decoration: none;
-    font-weight: bold;
     font-size: 1rem;
 }
 .btnMenuMovil{
 	display: none;
+	border: solid 3px #FB8501;
+	border-radius: 15px;
+	height: 50px;
+
+	align-items: center;
+
+	margin-top: 30px;
+	margin-right: 60px;
+	
 }
 
 .opMenuMovilCont{
@@ -55,13 +63,12 @@
 @media (max-width: 900px){
 	.btnMenuMovil{
 		display: flex;
-		height: 100%;
-		width: 150px;
+		height: 50px;
+		
 	}
 	.btnMenuMovil>img{
-		margin: auto;
-		width: 50%;
-		height: 50%;
+		margin: 0px;
+		height: 50px;
 	}
 	.btnMenuMovil:hover{
 		cursor: pointer;
