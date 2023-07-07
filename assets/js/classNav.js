@@ -33,7 +33,7 @@ class Nav{
 		let btnMenuMovil= document.createElement("div")
 		btnMenuMovil.classList.add('btnMenuMovil')
 		let img = document.createElement('img')
-		img.setAttribute('src','../sources/48x48menu.png')
+		img.setAttribute('src','../sources/menu y icon/icons8-menu-rounded-50x50-diseñocorrecto.png')
 
 		btnMenuMovil.appendChild(img);
 

@@ -38,7 +38,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 190px;
   margin-left: 350px;
   margin-right: 50px;
   max-height: 900px;
@@ -203,7 +203,7 @@ footer {
   }
 
   #results {
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -264,6 +264,7 @@ footer {
     }
   
     #results {
+      margin-top: 150px;
       margin-left: 0;
       margin-right: 0;
     }

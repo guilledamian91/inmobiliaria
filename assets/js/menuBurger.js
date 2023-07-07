@@ -9,6 +9,6 @@ window.addEventListener('load',()=>{
 	menu.addOpcion('Alquilar','../pestañas/alquilar.html')
 	menu.addOpcion('Franquicia','../pestañas/franquicia.html')
 	menu.addOpcion('Blog','../pestañas/blog.html')
-	menu.addOpcion('Contacto','../pestañas/contacto.html')
+
 	contenedor.appendChild(menu.menu)
 })

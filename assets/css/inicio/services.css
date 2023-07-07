@@ -35,10 +35,7 @@
 .contentServicio>.texto>h1,p{
 	text-align: center;
 }
-.contentServicio>.texto>p{
-	width: 60%;
-	margin-left: 20%;
-}
+
 .contentServicio>.texto>.sBotones{
 	display: flex;
 	flex-direction: row;
@@ -98,7 +95,7 @@
 	
 	.contentServicio>.texto {
 	    width: 86%;
-	    margin-top: -64%;
+	    margin-top: -14%;
 	    margin-left: -25px;
 	}
 	.contentServicio>.foto{
