@@ -1,5 +1,5 @@
 
-# LINK NETLIFI: https://inmogrupo19correcion.netlify.app/ #
+# LINK NETLIFY: https://inmogrupo19correcion.netlify.app/ #
 
 # Inmobiliaria
 
